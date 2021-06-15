@@ -135,7 +135,7 @@ end
 finsihed = false
 
 def play(board)
-  if(over? == false)
+  while over? == false
     turn(board)
   else
     if(winner == "X")
@@ -143,7 +143,7 @@ def play(board)
     elsif(winner == "O")
       puts "Congragulations O"
     else
-      "It's a draw"
+      "Cat's Game!"
     end
   end
 end
