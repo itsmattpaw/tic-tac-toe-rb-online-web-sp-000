@@ -135,25 +135,5 @@ end
 finsihed = false
 
 def play(board)
-  while finished != true
-    turn(board)
-  end
-  if won?(board) == true
-    if winner(board) == "X"
-      puts "Congratulations X!"
-    else
-      puts "Congratulations Y!"
-    end
-  else
-    puts "Cat's Game!"
-  end
-  if over?(board) == true
-    finished = true
-  elsif won?(board) == true
-    finished = true
-  elsif draw?(board) == true
-    finished = true
-  else
-    finished = false
-  end
+  turn(board)
 end
