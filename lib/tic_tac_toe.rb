@@ -135,5 +135,15 @@ end
 finsihed = false
 
 def play(board)
-  turn(board)
+  if(over? == false)
+    turn(board)
+  else
+    if(winner == "X")
+      puts "Congragulations X"
+    elsif(winner == "O")
+      puts "Congragulations O"
+    else
+      "It's a draw"
+    end
+  end      
 end
