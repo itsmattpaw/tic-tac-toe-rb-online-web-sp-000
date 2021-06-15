@@ -137,14 +137,15 @@ finsihed = false
 def play(board)
   while over? == false
     turn(board)
-    if over? == true
-      if(winner == "X")
-        puts "Congragulations X"
-      elsif(winner == "O")
-        puts "Congragulations O"
-      else
-        "Cat's Game!"
-      end
+  end
+  if over? == true
+    if(winner == "X")
+      puts "Congragulations X"
+    elsif(winner == "O")
+      puts "Congragulations O"
+    else
+      "Cat's Game!"
     end
   end
+
 end
